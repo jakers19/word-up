@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Word Up!</title>
+    <title>What's the Word? Word Up!</title>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
@@ -17,11 +17,8 @@
 
 </head>
 <body>
-
-    <h1 class="jumbotron">Word Up!</h1>
-
+    <h1 class="jumbotron">What's the Word? WORD UP!</h1>
     <main>
-
         <!--
         a section for things that should always be showing,
         even if the game has not yet started -->
@@ -44,6 +41,7 @@
             <!-- TODO 1
             Make a "New Game" button
             -->
+            <button id="new-game-button" class="btn btn-primary"> New Game </button>
         </section>
 
         <!-- things that should not show up until the (first) game has started -->
@@ -52,11 +50,13 @@
             <!-- TODO 4
             Add some instructions so the user knows what to do.
             -->
+            <p> Spell as many words as you can, using only these letters: </p>
 
             <!-- TODO 5
             Make an empty container to hold the letter chips.
             Give it an id of "allowed-letters".
             -->
+            <div id="allowed-letters"> </div>
 
             <!-- the form via which the user attempts to submit new words -->
             <form id="word-attempt-form">
